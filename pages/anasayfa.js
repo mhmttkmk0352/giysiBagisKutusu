@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, View, Text } from 'react-native';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
+import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
 
 console.log( MapView );
 
@@ -14,6 +15,24 @@ class App extends React.Component{
       longitudeDelta: 1.2
     }
   }
+
+  getCoordinates = () => {
+    RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
+      interval: 10000,
+      fastInterval: 5000,
+    }).then( data => {
+      if ( data  ){
+        console.log( data );
+      }
+    }).catch(err=>{
+ 
+    });
+  }
+
+  componentDidMount(){
+
+  }
+
   render(){
     return(
         <View style={styles.mainView}>
