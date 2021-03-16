@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/mehmettokmak/Desktop/sehgazvakfi2/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
+            "outputFile": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml",
             "map": [
                 {
                     "source": "/Users/mehmettokmak/.gradle/caches/transforms-2/files-2.1/d14dbad7340cad958a2e361a440b498d/appcompat-1.1.0/res/values-af/values-af.xml",
