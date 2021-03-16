@@ -15,7 +15,7 @@ class App extends React.Component{
       <NavigationContainer>
         <Stack.Navigator initialRouteName={"Giris"}>
           <Stack.Screen name="Giris" component={Giris} options={{headerShown:false}}></Stack.Screen>
-          <Stack.Screen name="Anasayfa" component={Anasayfa} options={{headerShown:true}}></Stack.Screen>
+          <Stack.Screen name="Anasayfa" component={Anasayfa} options={{headerShown:false}}></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
     );

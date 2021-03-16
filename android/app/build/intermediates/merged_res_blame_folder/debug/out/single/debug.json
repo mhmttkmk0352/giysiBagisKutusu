@@ -4,12 +4,12 @@
         "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
@@ -28,12 +28,12 @@
         "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
