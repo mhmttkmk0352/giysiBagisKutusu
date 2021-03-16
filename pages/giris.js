@@ -1,21 +1,46 @@
-import React from 'react';
-import { SafeAreaView, View, Text } from 'react-native';
-import { Container, Content } from 'native-base';
+import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { Container, Button, Content, Form, Item, Input, Text } from 'native-base';
+import axios from 'axios';
 
-class App extends React.Component{
+class App extends Component {
   constructor( props ){
     super( props );
-    this.state = {}
+    this.state = {
+      hash:""
+    }
   }
-  render(){
-    return(
-        <View>
-            <Text>
-              Giriş Sayfa
-            </Text>
-        </View>
+
+  girisYap=()=>{
+    alert(5);
+  }
+
+  render() {
+    return (
+      <Container>
+        <Content>
+          <Form>
+            <Item>
+              <Input placeholder="Kullanıcı Adı" />
+            </Item>
+            <Item last>
+              <Input placeholder="Parola" />
+            </Item>
+            <Button onPress={ ()=>{this.girisYap()} } style={styles.Button}>
+              <Text>Giriş Yap</Text>
+            </Button>
+          </Form>
+        </Content>
+      </Container>
     );
   }
 }
 
-export default App;
+const styles = StyleSheet.create({
+  Button:{
+    width:'100%',
+    justifyContent:'center'
+  }
+});
+
+export default  App;

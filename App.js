@@ -13,8 +13,8 @@ class App extends React.Component{
   render(){
     return(
       <NavigationContainer>
-        <Stack.Navigator initialRouteName={"Anasayfa"}>
-          <Stack.Screen name="Giris" component={Giris} options={{headerShown:true}}></Stack.Screen>
+        <Stack.Navigator initialRouteName={"Giris"}>
+          <Stack.Screen name="Giris" component={Giris} options={{headerShown:false}}></Stack.Screen>
           <Stack.Screen name="Anasayfa" component={Anasayfa} options={{headerShown:true}}></Stack.Screen>
         </Stack.Navigator>
       </NavigationContainer>
