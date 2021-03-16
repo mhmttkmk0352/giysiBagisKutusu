@@ -29,6 +29,8 @@ class App extends Component {
           hash = res.data.hash;
           this.setState( {hash: hash} );
           AsyncStorage.setItem("hash", hash).then();
+          AsyncStorage.setItem("kullanici_adi", this.state.kullanici_adi).then();
+          AsyncStorage.setItem("parola", this.state.parola).then();
           this.goToPage("Anasayfa", {});
         }
         else{
@@ -42,9 +44,12 @@ class App extends Component {
   }
 
   componentDidMount(){
-  
-  
-    //this.goToPage("Anasayfa", {});
+    AsyncStorage.getItem("kullanici_adi").then(kullanici_adi=>{
+      this.setState( {kullanici_adi:kullanici_adi} );
+    });
+    AsyncStorage.getItem("parola").then(parola=>{
+      this.setState( {parola:parola} );
+    });
   }
 
   render() {
@@ -53,10 +58,10 @@ class App extends Component {
         <Content>
           <Form>
             <Item>
-              <Input placeholder="Kullanıcı Adı" onChangeText={ text => { this.setState({kullanici_adi: text}) } } />
+              <Input value={this.state.kullanici_adi} placeholder="Kullanıcı Adı" onChangeText={ text => { this.setState({kullanici_adi: text}) } } />
             </Item>
             <Item last>
-              <Input placeholder="Parola" onChangeText={text => { this.setState({parola:text}) }}/>
+              <Input value={this.state.parola} placeholder="Parola" onChangeText={text => { this.setState({parola:text}) }}/>
             </Item>
             <Button onPress={ ()=>{this.girisYap()} } style={styles.Button}>
               <Text>Giriş Yap</Text>
