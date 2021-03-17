@@ -24,15 +24,16 @@ class App extends React.Component{
       if ( data  ){
         console.log( data );
       }
+      else{
+        this.openGps();
+      }
     }).catch(err=>{
- 
+      this.openGps();
     });
   }
 
   componentDidMount(){
-
     this.openGps();
-
   }
 
   render(){
