@@ -61,7 +61,7 @@ class App extends Component {
               <Input value={this.state.kullanici_adi} placeholder="Kullanıcı Adı" onChangeText={ text => { this.setState({kullanici_adi: text}) } } />
             </Item>
             <Item last>
-              <Input value={this.state.parola} placeholder="Parola" onChangeText={text => { this.setState({parola:text}) }}/>
+              <Input secureTextEntry={true} value={this.state.parola} placeholder="Parola" onChangeText={text => { this.setState({parola:text}) }}/>
             </Item>
             <Button onPress={ ()=>{this.girisYap()} } style={styles.Button}>
               <Text>Giriş Yap</Text>
