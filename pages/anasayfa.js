@@ -21,7 +21,7 @@ class App extends React.Component{
       fastInterval: 5000,
     }).then( data => {
       if ( data  ){
-        console.log( data );
+        console.log( {data} );
       }
       else{
         this.openGps();

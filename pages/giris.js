@@ -61,6 +61,7 @@ class App extends Component {
     AsyncStorage.getItem("parola").then(parola=>{
       this.setState( {parola:parola} );
     });
+
   }
 
   render() {
