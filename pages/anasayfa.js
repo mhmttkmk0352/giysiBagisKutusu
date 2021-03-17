@@ -3,7 +3,6 @@ import { StyleSheet, SafeAreaView, View, Text } from 'react-native';
 import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
 
-console.log( MapView );
 
 class App extends React.Component{
   constructor( props ){

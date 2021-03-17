@@ -22,18 +22,29 @@ class App extends Component {
     this.props.navigation.dispatch( stackAction );
   }
 
+  saveStorage=async( hash )=>{
+    let pr = new Promise((resolve, reject)=>{
+      (async()=>{
+        AsyncStorage.setItem("hash", hash).then();
+        AsyncStorage.setItem("kullanici_adi", this.state.kullanici_adi).then();
+        AsyncStorage.setItem("parola", this.state.parola).then();
+        resolve(1);
+      })()
+    });
+    return pr
+  }
+
   girisYap=()=>{
     if ( this.state.kullanici_adi.length > 0 && this.state.parola.length > 0 ){
       axios.get(this.state.url+"komut=hash&kullanici_adi="+this.state.kullanici_adi+"&parola="+this.state.parola).then(res=>{ 
         if ( res && res.data && res.data.status == 1 && res.data.hash ){
           hash = res.data.hash;
           this.setState( {hash: hash} );
-          AsyncStorage.setItem("hash", hash).then();
-          AsyncStorage.setItem("kullanici_adi", this.state.kullanici_adi).then();
-          AsyncStorage.setItem("parola", this.state.parola).then();
+          this.saveStorage().then().catch();
           this.goToPage("Anasayfa", {});
         }
         else{
+          this.saveStorage().then().catch();
           alert("Kullanıcı adı ya da parolanız yanlış !");
         }
       })
