@@ -16,7 +16,7 @@ class App extends React.Component{
     }
   }
 
-  getCoordinates = () => {
+  openGps = () => {
     RNAndroidLocationEnabler.promptForEnableLocationIfNeeded({
       interval: 10000,
       fastInterval: 5000,
@@ -30,6 +30,8 @@ class App extends React.Component{
   }
 
   componentDidMount(){
+
+    this.openGps();
 
   }
 
