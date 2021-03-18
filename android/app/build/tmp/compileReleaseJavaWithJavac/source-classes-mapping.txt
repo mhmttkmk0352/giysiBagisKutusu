@@ -1,0 +1,9 @@
+com/sehgazvakfi2/MainApplication.java
+ com.sehgazvakfi2.MainApplication
+ com.sehgazvakfi2.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/sehgazvakfi2/BuildConfig.java
+ com.sehgazvakfi2.BuildConfig
+com/sehgazvakfi2/MainActivity.java
+ com.sehgazvakfi2.MainActivity
