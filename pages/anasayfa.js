@@ -63,6 +63,7 @@ class App extends React.Component{
 
   componentDidMount(){
     this.openGps();
+    this.getPositions();
   }
 
   render(){
@@ -88,14 +89,20 @@ class App extends React.Component{
                 }}
 
                 onRegionChange={this._onRegionChange}>
-                 
                  {
-                   this.state.positions.map((v,k) => (
-                      <Text> { console.warn( JSON.stringify( v ) ) } </Text>
+                   this.state.positions && this.state.positions.map((v,k) => (
+                    <Marker
+                      key={v.id}
+                        coordinate={{
+                          latitude: parseFloat( v.latitude ),
+                          longitude: parseFloat( v.longitude ),
+                        }}
+                        name={"deneme_name"}
+                        title={"deneme_title"}  
+                        description={"deneme_aciklama"}   
+                        onPress={this._markerOnpress} />
                    ))
                  }
-  
-
             </MapView>
           </View>
           <View style={styles.buttonView}>
