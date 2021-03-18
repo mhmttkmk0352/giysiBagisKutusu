@@ -1,6 +1,7 @@
-#Wed Mar 17 02:58:56 EET 2021
+#Thu Mar 18 01:53:24 EET 2021
 path.1=classes.dex
 path.0=classes.dex
+renamed.10=classes11.dex
 renamed.9=classes10.dex
 renamed.8=classes9.dex
 renamed.7=classes8.dex
@@ -21,6 +22,8 @@ base.3=/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/bui
 base.2=/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/dex/debug/mergeLibDexDebug/classes_0.dex
 base.1=/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex
 base.0=/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.10=/Users/mehmettokmak/Desktop/sehgazvakfi2/giysiBagisKutusu/android/app/build/intermediates/dex/debug/mergeLibDexDebug/classes_8.dex
+path.10=classes_8.dex
 path.9=classes_7.dex
 path.8=classes_6.dex
 path.7=classes_5.dex
