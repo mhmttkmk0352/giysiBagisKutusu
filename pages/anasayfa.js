@@ -14,8 +14,16 @@ class App extends React.Component{
       latitude: 41.0391683,
       longitude: 28.9982707,
       latitudeDelta: 1.2,
-      longitudeDelta: 1.2
+      longitudeDelta: 1.2,
+      positions:[]
     }
+  }
+
+  getPositions=async()=>{
+    let url = this.state.url+"komut=liste";
+    axios.get( url ).then( res => {
+      this.setState( {positions: res.data.data} );
+    });
   }
 
   getPosition=( yaz=false )=>{
@@ -24,11 +32,12 @@ class App extends React.Component{
       this.setState( {latitude: position.coords.latitude} );
       this.setState( {longitude: position.coords.longitude} );
       if ( yaz == true ){
-        let url =this.state.url+"komut=ekle&hash=f90415ed3e3546a23241f5d3ec417e18&latitude="+position.coords.latitude+"&longitude="+position.coords.longitude;
+        let url = this.state.url+"komut=ekle&hash=f90415ed3e3546a23241f5d3ec417e18&latitude="+position.coords.latitude+"&longitude="+position.coords.longitude;
         console.log( {url} );
-        axios.get( url ).then(res=>{
+        axios.get( url ).then( res => {
           console.log( res.data );
           if ( res.data.status == 1 ){
+            this.getPositions();
             alert( res.data.message );
           }
         });
@@ -79,16 +88,12 @@ class App extends React.Component{
                 }}
 
                 onRegionChange={this._onRegionChange}>
-                  <Marker
-                      coordinate={{
-                        latitude: 41.0391683,
-                        longitude: 28.9972707,
-                      }}
-                      name={"deneme_name"}
-                      title={"deneme_title"}  
-                      description={"deneme_aciklama"}   
-                      onPress={this._markerOnpress}>
-                  </Marker>
+                 
+                 {
+                   this.state.positions.map((v,k) => (
+                      <Text> { console.warn( JSON.stringify( v ) ) } </Text>
+                   ))
+                 }
   
 
             </MapView>
