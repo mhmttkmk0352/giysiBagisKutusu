@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Button, Toast } from 'native-base';
-import MapView, {PROVIDER_GOOGLE, Marker, EventUserLocation} from 'react-native-maps';
+import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 import RNAndroidLocationEnabler from 'react-native-android-location-enabler';
 import Geolocation from 'react-native-geolocation-service';
 import axios from 'axios';
